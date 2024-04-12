@@ -108,9 +108,6 @@ struct BinarySearchTree {
 	vector<Data> findVectorInRange(Data minObject, Data maxObject);
 	int findInRange(Data minObject, Data maxObject);
 	bool isSameTree(Node* curNode1, Node* curNode2);
-	//Node* split(const Data data);
-	//void merge(Node* tree1, Node* tree2);
-	//void eraseRange(Data minObject, Data maxObject);
 private:
 	Node* headNode = nullptr;
 	Node* search(Node* curNode, const Data& data);
@@ -127,7 +124,4 @@ private:
 	void bigRightRot(Node* parentNode);
 	void smallLeftRot(Node* parentNode);
 	void smallRightRot(Node* parentNode);
-
-	//Node* insertInner(Node* curNode, const Data& data, Node* parent);
-	//Node* splitTree(Node* parentNode,const Data* data);
 };
